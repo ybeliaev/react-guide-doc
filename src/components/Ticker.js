@@ -2,16 +2,18 @@ import React, { Component } from "react";
 
 class Ticker extends Component {
   constructor(props) {
+    // console.log("Constructor!");
     super(props);
     this.state = { date: new Date() };
   }
   componentDidMount() {
-    console.log("componentDidMount()");
+    // console.log("++componentDidMount()++");
     this.timerID = setInterval(() => {
       return this.tick();
     }, 1000);
   }
   componentWillUnmount() {
+    // console.log("--componentWillUnmount()--");
     clearInterval(this.timerID);
   }
   tick() {
@@ -21,7 +23,7 @@ class Ticker extends Component {
   }
 
   render() {
-    console.log("render()");
+    // console.log("render()");
     return (
       <div>
         <h1>Привет, пиплы!!</h1>

@@ -1,13 +1,18 @@
 import React from "react";
 
 import "./App.css";
-import Element from "./components/element";
+import Link from "./components/Link";
 import Ticker from "./components/Ticker";
+
+function handleClick(event) {
+  event.preventDefault();
+  console.log(event, "The link was clicked.");
+}
 
 function App() {
   return (
     <div className="App">
-      <Element handleClick={() => console.log(Element.props)} />
+      <Link handleClick={handleClick} />
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
