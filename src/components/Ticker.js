@@ -5,7 +5,23 @@ class Ticker extends Component {
     super(props);
     this.state = { date: new Date() };
   }
+  componentDidMount() {
+    console.log("componentDidMount()");
+    this.timerID = setInterval(() => {
+      return this.tick();
+    }, 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+  tick() {
+    this.setState({
+      date: new Date(),
+    });
+  }
+
   render() {
+    console.log("render()");
     return (
       <div>
         <h1>Привет, пиплы!!</h1>
