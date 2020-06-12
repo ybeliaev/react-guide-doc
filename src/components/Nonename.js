@@ -1,6 +1,6 @@
 import React from "react";
 
-function Noname() {
+function Nonename() {
   return (
     <div>
       <h3>Привет, я noname</h3>
@@ -8,4 +8,4 @@ function Noname() {
   );
 }
 
-export default Noname;
+export default Nonename;
