@@ -5,9 +5,18 @@ class NameForm extends React.Component {
     super(props);
     this.state = { value: "" };
   }
+
+  handleChange = (e) => {
+    this.setState({ value: e.target.value });
+  };
+  handleSubmit = (e) => {
+    console.log(`A name was submitting: ${this.state.value}`);
+    e.preventDefault();
+  };
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <label>
           Name:
           <input
