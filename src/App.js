@@ -4,7 +4,7 @@ import "./App.css";
 import Link from "./components/Link";
 import Ticker from "./components/Ticker";
 import Button from "./components/Button";
-import LoginControl from "./components/LoginControl";
+import LoginControl from "./components/Login/LoginControl";
 
 function handleClick(event) {
   event.preventDefault();
