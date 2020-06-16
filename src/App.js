@@ -6,6 +6,7 @@ import Ticker from "./components/Ticker";
 import Button from "./components/Button";
 import LoginControl from "./components/Login/LoginControl";
 import NameForm from "./components/Form/NameForm";
+import TemperatureInput from "./components/Temperature/CalcTemperature";
 
 function handleClick(event) {
   event.preventDefault();
@@ -20,10 +21,8 @@ function App() {
       <header className="App-header">
         <Button />
         <LoginControl />
-        <p>
-          <code>Edit src/App.js and save to reload.</code>
-        </p>
 
+        <TemperatureInput />
         <Ticker />
       </header>
     </div>
