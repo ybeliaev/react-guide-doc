@@ -5,6 +5,7 @@ import Link from "./components/Link";
 import Ticker from "./components/Ticker";
 import Button from "./components/Button";
 import LoginControl from "./components/Login/LoginControl";
+import NameForm from "./components/Form/NameForm";
 
 function handleClick(event) {
   event.preventDefault();
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Link handleClick={handleClick} />
+      <NameForm />
       <header className="App-header">
         <Button />
         <LoginControl />

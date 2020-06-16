@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-
-import Greeting from "./Greeting"
+import Greeting from "./Greeting";
 
 class LoginControl extends Component {
   constructor(props) {
@@ -24,9 +23,9 @@ class LoginControl extends Component {
     let button;
 
     if (isLoggedIn) {
-      button = <LogoutButton onClick={() => this.handleLogoutClick()} />;
+      button = <LogOutButton onClick={() => this.handleLogoutClick()} />;
     } else {
-      button = <LoginButton onClick={() => this.handleLoginClick()} />;
+      button = <LogInButton onClick={() => this.handleLoginClick()} />;
     }
 
     return (
@@ -38,13 +37,11 @@ class LoginControl extends Component {
   }
 }
 
-
-
-function LoginButton(props) {
+function LogInButton(props) {
   return <button onClick={props.onClick}>Login</button>;
 }
 
-function LogoutButton(props) {
+function LogOutButton(props) {
   return <button onClick={props.onClick}>Logout</button>;
 }
 
