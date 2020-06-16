@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import User from "./User";
-import Nonename from "./Nonename";
+import Noname from "./Noname";
 
 class LoginControl extends Component {
   constructor(props) {
@@ -43,7 +43,7 @@ function Greeting(props) {
   if (isLoggedIn) {
     return <User />;
   }
-  return <Nonename />;
+  return <Noname />;
 }
 
 function LoginButton(props) {
