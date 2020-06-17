@@ -1,13 +1,7 @@
 import React from "react";
-import Celsius from "./Celsius";
-import Fahrenheit from "./Fahrenheit";
+
 import BoilingVerdict from "./BoilingVerdict";
 import TemperatureInput from "./TemperatureInput";
-
-// const scaleNames = {
-//   c: "Celsius",
-//   f: "Fahrenheit",
-// };
 
 function toCelsius(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;
