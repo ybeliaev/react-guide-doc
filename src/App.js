@@ -17,12 +17,15 @@ function App() {
   return (
     <div className="App">
       <Link handleClick={handleClick} />
+      <hr />
       <NameForm />
+      <hr />
       <header className="App-header">
         <Button />
         <LoginControl />
 
         <TemperatureInput />
+
         <Ticker />
       </header>
     </div>
