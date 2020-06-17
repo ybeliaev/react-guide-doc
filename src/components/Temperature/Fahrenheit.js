@@ -4,7 +4,10 @@ function Fahrenheit({ FarTemperature, handleChange }) {
   return (
     <fieldset>
       <legend>Enter temperature in Fahrenheit:</legend>
-      <input value={FarTemperature} onChange={handleChange} />
+      <input
+        value={FarTemperature}
+        onChange={(event) => handleChange(event.target.value)}
+      />
     </fieldset>
   );
 }
