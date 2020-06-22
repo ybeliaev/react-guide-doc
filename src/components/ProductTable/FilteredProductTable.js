@@ -1,4 +1,6 @@
 import React from "react";
+import SearchBare from "./SearchBar";
+import ProductTable from "./ProductTable";
 
 const PRODUCTS = [
   {
@@ -40,7 +42,12 @@ class FilteredProductTable extends React.Component {
   }
 
   render() {
-    return <div>1</div>;
+    return (
+      <div>
+        <SearchBare />
+        <ProductTable products={PRODUCTS} />
+      </div>
+    );
   }
 }
 
